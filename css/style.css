@@ -1,7 +1,10 @@
 * {
    padding: 0;
    margin: 0; 
-list-style: none;
+   text-decoration:none ;
+   
+   
+
     
 }
 
@@ -12,11 +15,9 @@ list-style: none;
 }
 
 .menu > ul > li {
-    display: block;
     font-weight: 750;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0 20px;
-    
+    list-style: none;
 
     
     }
@@ -45,6 +46,15 @@ list-style: none;
     background-color: red;
     color: white;
     
+
+    
+    
+}
+
+.contact:hover {
+    background-color: white;
+    border: 1px solid red;
+    color: red;
 }
 
 .main {
@@ -54,9 +64,11 @@ list-style: none;
     height: 450px;
 }
 
+
 .background {
     display: block;
     width: 100%;
+    
 }
 
 .logoon {
@@ -99,7 +111,7 @@ list-style: none;
     font-weight:bold;
 }
 
-.p2 {
+.categorie {
     margin-top: 35px;
     display: block;
     text-align: center;
@@ -111,11 +123,136 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.block {
-    display: flex;
-    justify-content: space-between;
+.bureautique{  
+    display: block;
+    border-radius: 5px;   
+    margin-top: 75px;
+    margin-right: 80px;
+    text-align: left;
+    width: 400px;
+    overflow: hidden;
+    background-color: #eee8e8;
+
 }
 
 
 
 
+
+.block {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 300px;
+ 
+}
+   
+ .block > .bureautique > h4 , .box {
+  position: relative;
+  left: 55px;
+  bottom: 53px;
+  max-width: 100%;
+    
+    
+} 
+
+#logo {
+    margin-right: 350px;
+    padding-top: 35px;
+}
+
+.bureautique > img {
+    max-width: 100%;
+    width:100%;
+    height: auto;
+}
+
+.pedagogique {
+    display: flex;
+    margin-top: 81px;
+    margin-left: 69px;
+}
+
+.pedago {
+    display: block;
+    width: 450px;
+    margin-left: 30px;
+}
+
+.titre {
+    width: 250px;
+    margin: 15px 0;
+    
+}
+
+.cata {
+    color: red;
+    
+ }
+
+
+/*Menu LMS*/
+ .menu > ul > li > ul  {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    z-index: 80;
+    position: absolute;
+    border-top: 1px solid red;
+    top: 104px;
+    margin: 0 10px;
+    
+ }
+
+.menu > ul > li > ul > li > a {
+    display:inline-block;
+    padding-top: 10px;
+    line-height: 40px;
+    height:40px;
+    margin: 0 10px;
+ }
+
+ 
+
+ .menu > ul > li:hover > ul  {
+    display: block;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    list-style-type: none;
+    
+    
+ }
+
+ .menu > ul > li > ul  {
+    position: absolute;
+    
+    
+ }
+
+ .menu > ul > li:hover > a {
+    color: red ; 
+    display: block;
+    
+   
+    
+    
+ }
+
+.menu > ul > li > a   {
+    color: black;
+    display: block;
+    height: 104px;
+    line-height: 104px;
+    padding: 0 10px;
+}
+
+.menu ul > li > ul > li:hover > a{
+    color:red;
+    
+}
+
+.menu ul > li > ul > li > a {
+    color: black;
+}
